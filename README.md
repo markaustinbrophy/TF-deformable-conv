@@ -1,5 +1,14 @@
 # TF-deformable-conv
 
+Needed to add the following to my ~/.bashrc
+
+    # might need the following
+    export LD_LIBRARY_PATH=/usr/local/cuda:/usr/local/cuda/lib64:/home/markb/Dev/superres/superreso/kitti_devkit:/media/markb/pose-estimation/TF-deformable-conv/lib
+    export TF_INC=/home/markb/anaconda2/envs/multipose/lib/python2.7/site-packages/tensorflow/include
+
+The big thing is ensuring in g++_compile.sh that CUDA_HOME was defined to be the one located in my anaconda distribution.                                                                                                 
+
+
 This is a repository for a [Deformable Convolution](https://arxiv.org/abs/1703.06211) operation in Tensorflow. This repo largely borrows cuda codes from [original implementation](https://github.com/msracver/Deformable-ConvNets).
 
 ### Check [here](https://github.com/Zardinality/TF_Deformable_Net) for a inplementation of Deformable net in tensorflow.
